@@ -1,0 +1,72 @@
+/*Large Background Image*/
+html {
+  background: url(../img/autumn-landscape.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+span{
+  font-size: 1.5rem;
+  max-height: 33%;
+  font-family:  "Permanent Marker", "Courier New", monospace;
+  color: #F05133;
+}
+
+p{
+  text-align: center;
+}
+
+a{
+    color: gray;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  flex-direction: column;
+
+  /* This is a fallback for the translucent background for older browsers */
+  background: #222;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+}
+
+.main-paragraph {
+  width: 75%;
+}
+
+.content p span {
+  font-size: 1.5rem;
+}
+ #photo-credit {
+  font-size: 0.75em;
+  color: gray;
+  text-decoration: none;
+}
+
