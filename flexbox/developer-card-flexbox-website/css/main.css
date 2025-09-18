@@ -1,6 +1,6 @@
 /* Global styles */
 body {
-  color: #524f4f;
+  color: #383838;
   font-family: "Marcellus", serif;
   line-height: 1.5;
 }
@@ -28,19 +28,32 @@ header .content-wrapper {
   justify-content: center;
 }
 
-h1 {
-  background: #f4e278;
+h1, h2 {
+ 
   font-family: "Josefin Slab", serif;
   /* Font-size can be adjusted for mobile so that your name fits on a single row. */
+
+}
+
+h1{
+   background: #f4e278;
   font-size: 3rem;
-  border-radius: 20px;
+    border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 1rem;
+
 }
 
 h2 {
-  font-family: "Cherry Bomb One", system-ui;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+span{
+  font-family: "Pacifico", cursive;
+  color: #E00070;
+  text-decoration: underline;
+  text-decoration-color: #d5b2e0;
+  text-decoration-thickness: 0.25rem;
 }
 
 /* Main styles */
