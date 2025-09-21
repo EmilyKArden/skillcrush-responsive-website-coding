@@ -1,20 +1,20 @@
 body {
   text-align: center;
-  background: #261e6d;
-  font-family: 'Mooli', sans-serif;
+  background: #f4f1de;
+  font-family: "Indie Flower", cursive;
 }
 
 h1 {
   font-size: 3rem;
-  color: white;
-  font-family: 'Croissant One', cursive;
+  color: #3d405b;
+  font-family: "Permanent Marker", cursive;
   text-decoration: underline;
-  text-decoration-color: #07c0e6;
+  text-decoration-color: #f2cc8f;
 }
 
 p,
 ul li {
-  color: #261e6d;
+  color: black;
   font-size: 1.2rem;
   width: 100%;
 }
@@ -27,39 +27,37 @@ ul {
 header,
 main,
 footer {
-  /* Add a Flexbox property to make the content-wrapper a flex parent container. */
-
-  /* Add a Flexbox property to center the contents of each section. */
-
+  /*Added Flexbox properties*/
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
 .content-wrapper {
   width: 90%;
   max-width: 1200px;
-  /* Add a Flexbox property to make the content-wrapper a flex parent container. */
-
-  /* Add a Flexbox property to allow the flex child items to wrap. */
-
-  /* Add a Flexbox property to center the contents of each section. */
-
+  /* Added flex, flex-wrap, and centered items.*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 main .content-wrapper {
-  /* Add the gap property with a value of 20px to create space between the rows and columns. */
-
+  /* Added gap to items in the wrapper.*/
+  gap: 20px;
 }
 
 .affirmation-block {
   border-radius: 5px;
   width: 100%;
-  background: #f2f1fb;
-  /* Add a Flexbox property to make every block with text a flex parent container. */
-
-  /* Add a Flexbox property to align the text in each block at its center. */
-
+  background: #81b29a;
+  /* Added flex and align-items:center*/
+  display: flex;
+  align-items: center;
+  /*Adding Justify-Content: Center here to try to fix scrolling on desktop and tablet */
+  justify-content: center;
   padding: 10px;
-  border: 1px solid #07c0e6;
+  border: 1px solid #e07a5f;
 }
 
 .gif-block {
@@ -72,24 +70,21 @@ img {
 }
 
 .copyright {
-  color: #f2f1fb;
+  color: black;
   padding-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-
   html,
   body {
     height: 100%;
   }
 
   .center-wrapper {
-    /* Add a Flexbox property to make the content-wrapper a flex parent container. */
-
-    /* Add a Flexbox property to allow the flex child items to wrap. */
-
-    /* Add the Flexbox property align-content with a value of space-around to space the content vertically. */
-
+    /* Added flex, wrap, and space around. */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
     height: 100%;
     width: 100%;
   }
@@ -101,11 +96,9 @@ img {
   .gif-block {
     width: 48%;
   }
-
 }
 
 @media (min-width: 1200px) {
-
   .affirmation-block {
     width: 30%;
   }
